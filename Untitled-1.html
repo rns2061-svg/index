@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mug Ritual</title>
+    <style>
+        /* הגדרות כלליות */
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #FDF6EC;
+            color: #4A2C2A;
+        }
+
+        /* סרגל ניווט עליון (Navbar) */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #D1E3E7;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8B2635;
+            text-decoration: none;
+            font-family: Georgia, serif;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #6B7280;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #8B2635;
+        }
+
+        /* עמוד הבית - Hero Section */
+        .hero {
+            margin-top: 70px;
+            display: grid;
+            grid-template-cols: 1fr 1fr;
+            height: 80vh;
+            border-bottom: 8px solid #D1E3E7;
+        }
+
+        .hero-text {
+            background-color: #8B2635;
+            color: white;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+            font-family: Georgia, serif;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .cta-btn {
+            background-color: #D1E3E7;
+            color: #8B2635;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            width: fit-content;
+            transition: background-color 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: white;
+        }
+
+        .hero-image {
+            background-color: #F7D7D7;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* סקשן 3 עובדות */
+        .facts {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .facts h2 {
+            font-size: 36px;
+            color: #8B2635;
+            font-family: Georgia, serif;
+            margin-bottom: 50px;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-cols: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .fact-card {
+            border-radius: 30px;
+            padding: 40px 30px;
+            text-align: right;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .fact-card h3 {
+            font-size: 22px;
+            color: #8B2635;
+            margin-top: 0;
+        }
+
+        .fact-card p {
+            font-size: 16px;
+            color: #6B7280;
+            line-height: 1.5;
+        }
+
+        /* כותרת תחתונה (Footer) */
+        footer {
+            background-color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 2px solid #D1E3E7;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #8B2635;
+            font-weight: bold;
+        }
+
+        footer .copy {
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- סרגל ניווט -->
+    <nav class="navbar">
+        <a href="#" class="logo">THE MUG RITUAL</a>
+        <div class="nav-links">
+            <a href="#">דף הבית</a>
+            <a href="#">שלבי ההכנה</a>
+            <a href="#">סטודיו לעיצוב</a>
+            <a href="#">המעצבת</a>
+        </div>
+    </nav>
+
+    <!-- תוכן עמוד הבית -->
+    <main>
+        <!-- חלק עליון של העמוד -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>טקס הבוקר <br>מתחיל כאן.</h1>
+                <p>מהטחינה הדקה ועד ללגימה האחרונה עם העוגייה. גלו את הסיפור שמאחורי החפץ הכי אישי שלכם.</p>
+                <a href="#" class="cta-btn">לעצב את הכוס שלי</a>
+            </div>
+            <div class="hero-image">
+                <!-- כאן תופיע התמונה שלך, ודאי שהקובץ נמצא באותה תיקייה של ה-HTML -->
+                <img src="Gemini_Generated_Image_crg5i4crg5i4crg5.png" alt="אווירת קפה">
+            </div>
+        </section>
+
+        <!-- 3 עובדות -->
+        <section class="facts">
+            <h2>3 עובדות על הטקס שלך</h2>
+            <div class="facts-grid">
+                <!-- עובדה 1 -->
+                <div class="fact-card" style="background-color: #D1E3E7;">
+                    <h3>הטחינה המושלמת</h3>
+                    <p>גודל הגרגר קובע את קצב המיצוי של הקפה בתוך הכוס, בדיוק כמו במטחנה.</p>
+                </div>
+                <!-- עובדה 2 -->
+                <div class="fact-card" style="background-color: #F7D7D7;">
+                    <h3>חום המים</h3>
+                    <p>94 מעלות צלזיוס הן הטמפרטורה האידיאלית כדי לא לשרוף את פולי הקפה המובחרים.</p>
+                </div>
+                <!-- עובדה 3 -->
+                <div class="fact-card" style="background-color: #FFF0DB;">
+                    <h3>פסיכולוגיית העוגייה</h3>
+                    <p>השילוב בין המתוק למריר יוצר תגובה משפרת ריכוז ומאזנת את הבוקר בצורה מושלמת.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- כותרת תחתונה -->
+    <footer>
+        <p>THE MUG RITUAL PROJECT</p>
+        <p class="copy">© 2024 Design & Rituals</p>
+    </footer>
+
+</body>
+</html>
